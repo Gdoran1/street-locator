@@ -10,7 +10,7 @@ class StreetContainer extends React.Component {
   render(){
     return (
       <div>
-        <h2>Street Locator</h2>
+        <h2></h2>
         <Form/>
       </div>
     );

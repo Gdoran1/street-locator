@@ -21,15 +21,13 @@ class Form extends React.Component{
     event.preventDefault();
 
     const address = this.state.address.replace(' ', '+')
-
-
     const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=AIzaSyAoylo15DbCPTH8_s5uqGBTxsJ36oUPNq8`;
     const request = new XMLHttpRequest();
     request.open('GET', url);
 
     if(!this.state.address){
       this.setState({
-        error: 'Input box cannot be empty.'
+        error: 'Input box should not be empty.'
       })
       return;
     }
@@ -54,9 +52,6 @@ class Form extends React.Component{
     })
   }
 
-
-
-
   render(){
     return (
   <form onSubmit={this.onSubmit}>
@@ -64,7 +59,7 @@ class Form extends React.Component{
     <input name='address' value={this.state.address} onChange={this.onChange}/>
     <input name='latitude' value={this.state.location.lat}/>
     <input name='longitude' value={this.state.location.lng}/>
-    <button type='submit'>FIND</button>
+    <button type='submit' visible='false'>FIND</button>
   </form>
   )
  }

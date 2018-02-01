@@ -1,21 +1,16 @@
 body {
-  background-color: teal;
-  border-style: outset;
+  background-color: #46046d;
+  /* border-style: inset;
   border-width: thick;
-  border-color: red;
+  border-color: black; */
   text-align: center;
-  margin: 250px 180px 0px 180px;
+  margin: 180px;
   font-family: monospace;
 }
 
 button {
-  background-color: green;
-  color: white;
-  height: auto;
-  width: 100%;
-  font-size: 1.5rem;
+  visibility: hidden;
 }
-
 input {
   border-width: thick;
   border-color: inherit;
@@ -23,10 +18,11 @@ input {
   width: 100%;
   font-size: 1.5rem;
   background-color: skyblue;
-
+  margin-bottom: 25px;
 }
 form{
   margin: auto;
+  padding: 100px 0px 50px 0px;
   width: 50%;
 }
 div{
